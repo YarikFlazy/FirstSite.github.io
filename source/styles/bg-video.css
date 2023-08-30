@@ -1,0 +1,38 @@
+.bg-video {
+    height: 70vh;
+    /* 70% от высоты просмотра */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-video video {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* если видео не вмещ обрезать края */
+    z-index: 1;
+    /* какой слой первее */
+}
+
+
+.effect {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 2;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+.video-text {
+    color: aquamarine;
+    z-index: 2;
+}

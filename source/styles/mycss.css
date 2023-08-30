@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Michroma&display=swap);
+/* import font-style api */
+body {
+    font-family: Michroma, serif;
+    /* use font style and alt */
+    background: linear-gradient(90deg, #045DD6 0%, #120A0A 100%);
+}
+.nav-link {
+    color: aquamarine;
+}
+.navbar-nav .nav-link.active {
+    color: rgb(163, 172, 169);
+    /* не работает потому что будстрап охренел и сделал 20 приоритетность */
+    /* поэтому мы тоже ее повысили (коскадность) */
+}
+.navbar-brand img {
+    width: 40px;
+}
+.navbar-toggler {
+    background-color: #ada5a5;
+}
+.sidebar {
+    color: aquamarine;
+    background: linear-gradient(270deg, #045DD6 0%, #120A0A 100%);
+
+}
+p {
+    color: aquamarine;
+}
+.card {
+    background: linear-gradient(270deg, #045DD6 0%, #120A0A 100%);
+    color: aquamarine
+}
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+.slide-text,
+.footer-text {
+    color: aquamarine;
+    margin: auto auto;
+    /* mid on x and y */
+}
+footer,
+.btn-outline-primary {
+    background: linear-gradient(270deg, #045DD6 0%, #120A0A 100%);
+}
+.media-links {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+.call-anim {
+    animation: myAnim 2s ease 2s infinite normal forwards;
+    /* web code tools */
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
